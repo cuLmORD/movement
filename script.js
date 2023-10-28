@@ -6,6 +6,8 @@ const leftB = document.querySelector(".left");
 const rightB = document.querySelector(".right");
 let newT = 0;
 let newL = 0;
+const X = document.querySelector(".X");
+const Y = document.querySelector(".Y");
 
 // functions for movement
 const moveU = () => {
@@ -16,6 +18,7 @@ const moveU = () => {
         box.innerHTML = ":D";
         newT -= 10;
         box.style.top = newT + "px";
+        X.innerHTML = "X: " + ((-1) * newT);
         console.log(newT);
     }
 };
@@ -28,6 +31,7 @@ const moveD = () => {
         box.innerHTML = ":D";
         newT += 10;
         box.style.top = newT + "px";
+        X.innerHTML = "X: " + ((-1) * newT);
         console.log(newT);
     }
 };
@@ -40,6 +44,7 @@ const moveL = () => {
         box.innerHTML = ":D";
         newL -= 10;
         box.style.left = newL + "px";
+        Y.innerHTML = "Y: " + newL;
         console.log(newL);
     }
 };
@@ -52,6 +57,7 @@ const moveR = () => {
         box.innerHTML = ":D";
         newL += 10;
         box.style.left = newL + "px";
+        Y.innerHTML = "Y: " + newL;
         console.log(newL);
     }
 };

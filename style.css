@@ -5,6 +5,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 90vh;
+    font-family: 'Minecraft', sans-serif;
 }
 .casing {
     background-color: #ff6a6a;
@@ -52,8 +53,24 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 5rem;
+    font-size: 3rem;
+    font-style: normal;
     background-color: #404040;
     border-radius: 20px;
     transition: top 0.2s ease-in-out, left 0.2s ease-in-out;
+}
+.coords {
+    position: absolute;
+    left: 350px;
+    top: 0px;
+    background-color: #404040;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+span {
+    position: relative;
+    color: #ffffff;
 }
