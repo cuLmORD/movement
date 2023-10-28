@@ -57,6 +57,7 @@ function moveKW() {
         newT2 = newT + "px";
         box.style.top = newT2;
         X.innerHTML = "X: " + ((-1) * newT);
+        checkForEscapeT();
     }
 }
 function moveKA() {
@@ -69,6 +70,7 @@ function moveKA() {
         newL2 = newL + "px";
         box.style.left = newL2;
         Y.innerHTML = "Y: " + newL;
+        checkForEscapeL();
     }
 }
 function moveKS() {
@@ -81,6 +83,7 @@ function moveKS() {
         newT2 = newT + "px";
         box.style.top = newT2;
         X.innerHTML = "X: " + ((-1) * newT);
+        checkForEscapeT();
     }
 }
 function moveKD() {
@@ -93,6 +96,7 @@ function moveKD() {
         newL2 = newL + "px";
         box.style.left = newL2;
         Y.innerHTML = "Y: " + newL;
+        checkForEscapeL();
     }
 }
 // functions for movement with buttons
