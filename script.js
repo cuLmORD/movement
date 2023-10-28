@@ -9,27 +9,51 @@ let newL = 0;
 
 // functions for movement
 const moveU = () => {
-    newT -= 10;
-    box.style.top = newT + "px";
-    console.log(newT);
+    if (newT === -100) {
+        box.innerHTML = "T^T";
+        return
+    } else {
+        box.innerHTML = ":D";
+        newT -= 10;
+        box.style.top = newT + "px";
+        console.log(newT);
+    }
 };
 
 const moveD = () => {
-    newT += 10;
-    box.style.top = newT + "px";
-    console.log(newT);
+    if (newT === 100) {
+        box.innerHTML = "T^T";
+        return
+    } else {
+        box.innerHTML = ":D";
+        newT += 10;
+        box.style.top = newT + "px";
+        console.log(newT);
+    }
 };
 
 const moveL = () => {
-    newL -= 10;
-    box.style.left = newL + "px";
-    console.log(newL);
+    if (newL === -200) {
+        box.innerHTML = "T^T";
+        return;
+    } else {
+        box.innerHTML = ":D";
+        newL -= 10;
+        box.style.left = newL + "px";
+        console.log(newL);
+    }
 };
 
 const moveR = () => {
-    newL += 10;
-    box.style.left = newL + "px";
-    console.log(newL);
+    if (newL === 200) {
+        box.innerHTML = "T^T";
+        return;
+    } else {
+        box.innerHTML = ":D";
+        newL += 10;
+        box.style.left = newL + "px";
+        console.log(newL);
+    }
 };
 
 //Event listeners
