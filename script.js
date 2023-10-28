@@ -7,7 +7,7 @@ const rightB = document.querySelector(".right");
 let newT = 0;
 let newL = 0;
 
-// functions
+// functions for movement
 const moveU = () => {
     newT -= 10;
     box.style.top = newT + "px";
